@@ -9,7 +9,7 @@ bot_sessions/
 *.log
 
 # eslint config (opcional)
-.eslintrc.js
+# .eslintrc.js
 
 # QR code image file generated for WhatsApp session
 bot.qr.png

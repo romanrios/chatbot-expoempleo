@@ -4,6 +4,8 @@ const QRPortalWeb = require('@bot-whatsapp/portal');
 const BaileysProvider = require('@bot-whatsapp/provider/baileys');
 const MockAdapter = require('@bot-whatsapp/database/mock');
 
+const IMG_EXPO_EMPLEO = 'https://raw.githubusercontent.com/romanrios/chatbot-expoempleo/refs/heads/main/assets/expoempleo_cuadrado.png';
+
 
 // TERCER NIVEL DE RESPUESTA
 
@@ -21,7 +23,7 @@ const mensajeFinal = [
 ];
 
 const flowExpoRosario = addKeyword(['1'])
-    .addAnswer('¡Aquí tienes una imagen!', { media: 'https://ruta/a/imagen.jpg' })
+    .addAnswer('Expo Empleo', { media: IMG_EXPO_EMPLEO })
     .addAnswer(
         [
             'La Expo Empleo Rosario se realiza el *Jueves 07/11* en *La Fluvial* desde las *10:00 hs hasta las 18:30 hs*',
@@ -30,11 +32,12 @@ const flowExpoRosario = addKeyword(['1'])
             'También, independientemente de quedar seleccionado para las entrevistas o no, vas a poder *postularte* a todas las *búsquedas laborales activas* de *forma digital*, no necesitas llevar tu CV impreso.',
             'Además durante toda la jornada se estarán haciendo charlas, talleres y actividades vinculadas al mundo del trabajo ¡Sumate también a sumar más habilidades para el empleo! ¡Te esperamos!',
         ])
-.addAnswer(mensajeFinal);
+    .addAnswer(mensajeFinal);
 
 
 
 const flowExpoSantaFe = addKeyword(['2'])
+    .addAnswer('Expo Empleo', { media: IMG_EXPO_EMPLEO })
     .addAnswer(
         [
             'La Expo Empleo Santa Fe se realiza el *Miércoles 20/11* en el *Estadio Cubierto del Club Atlético Unión de Santa Fe* desde las *10:00 hs hasta las 18:30 hs* *',
@@ -43,8 +46,8 @@ const flowExpoSantaFe = addKeyword(['2'])
             'También, independientemente de quedar seleccionado para las entrevistas o no, vas a poder *postularte* a todas las *búsquedas laborales activas* de *forma digital*, no necesitas llevar tu CV impreso.',
             'Además durante toda la jornada se estarán haciendo charlas, talleres y actividades vinculadas al mundo del trabajo ¡Sumate también a sumar más habilidades para el empleo! ¡Te esperamos!',
         ])
-.addAnswer(mensajeFinal);
-// Adjuntar flyer de la Expo Santa Fe
+    .addAnswer(mensajeFinal);
+
 
 const flowImpulsa = addKeyword(['3', 'impulsa'])
     .addAnswer(
@@ -56,7 +59,7 @@ const flowImpulsa = addKeyword(['3', 'impulsa'])
             'Si querés conocer toda la oferta formativa vigente ingresá en: https://www.santafe.gob.ar/ms/impulsa/oferta-formativa-completa/',
             'Si querés postular una capacitación ingresá en: https://twww.santafe.gob.ar/simtyss/portalempleo/?menu_subportales/ver_info_programa/1/',
         ])
-.addAnswer(mensajeFinal);
+    .addAnswer(mensajeFinal);
 
 
 const flowEmpleoJoven = addKeyword(['4', 'empleo'])
@@ -69,7 +72,7 @@ const flowEmpleoJoven = addKeyword(['4', 'empleo'])
             'Si estás buscando personal, registrate en: https://twww.santafe.gob.ar/simtyss/portalempleo/?busqueda_detallada_postulante_pe/',
             'Si querés conocer más sobre este programa ingresá a: https://twww.santafe.gob.ar/simtyss/portalempleo/?home/',
         ])
-.addAnswer(mensajeFinal);
+    .addAnswer(mensajeFinal);
 
 
 const flowPracticasLaborales = addKeyword(['5', 'practicas'])
@@ -79,7 +82,7 @@ const flowPracticasLaborales = addKeyword(['5', 'practicas'])
             'Si tenés una empresa, un comercio o un emprendimiento y querés solicitar el programa Prácticas Laborales Formativas ingresá en: https://www.santafe.gob.ar/trabdigno/login',
             // 'Si querés realizar una Práctica Laboral Formativa inscribite en:',
         ])
-.addAnswer(mensajeFinal);
+    .addAnswer(mensajeFinal);
 
 
 const flowOtrasConsultas = addKeyword(['6', 'otra'])
