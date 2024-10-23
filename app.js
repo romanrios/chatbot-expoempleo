@@ -113,14 +113,14 @@ const flowPrincipal = addKeyword([EVENTS.WELCOME])
 
 
 const main = async () => {
-    // const adapterDB = new MockAdapter()
+    const adapterDB = new MockAdapter()
     const adapterFlow = createFlow([flowPrincipal])
     const adapterProvider = createProvider(BaileysProvider)
 
     createBot({
         flow: adapterFlow,
         provider: adapterProvider,
-        // database: adapterDB,
+        database: adapterDB,
     })
 
     QRPortalWeb()
