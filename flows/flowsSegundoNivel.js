@@ -23,7 +23,7 @@ const flowExpoRosario = addKeyword(['1'])
     .addAnswer(' ', { media: IMG_EXPO_EMPLEO })
     .addAnswer(
         [
-            'La Expo Empleo Rosario se realiza el *Jueves 07/11* en *La Fluvial* desde las *10:00 hs hasta las 18:30 hs*',
+            'La Expo Empleo Rosario se realiza el *Jueves 07/11* en *La Fluvial* desde las *10:00 hs hasta las 18:00 hs*',
             'Es una jornada donde más de 100 empresas van a estar recibiendo postulantes para vacantes en puestos laborales.',
             'Vas a poder postularte a tener *entrevistas* con esas empresas entrando en: LINK A LA PLATAFORMA en caso de quedar preseleccionado, te llegará un mail con tus turnos para ese día.',
         ])
@@ -38,7 +38,7 @@ const flowExpoSantaFe = addKeyword(['2'])
     .addAnswer('Expo Empleo', { media: IMG_EXPO_EMPLEO })
     .addAnswer(
         [
-            'La Expo Empleo Santa Fe se realiza el *Miércoles 20/11* en el *Estadio Cubierto del Club Atlético Unión de Santa Fe* desde las *10:00 hs hasta las 18:30 hs*',
+            'La Expo Empleo Santa Fe se realiza el *Miércoles 20/11* en el *Estadio Cubierto del Club Atlético Unión de Santa Fe* desde las *10:00 hs hasta las 18:00 hs*',
             'Es una jornada donde más de 100 empresas van a estar recibiendo postulantes para vacantes en puestos laborales. ',
             'Vas a poder postularte a tener *entrevistas* con esas empresas entrando en: LINK A LA PLATAFORMA en caso de quedar preseleccionado, te llegará un mail con tus turnos para ese día.',
         ])
